@@ -7,7 +7,6 @@
 #
 # . ./screw_you_debian.sh
 
-set -e
 PWD=`pwd`
 cd $HOME
 if [ ! -d gems ]; then
