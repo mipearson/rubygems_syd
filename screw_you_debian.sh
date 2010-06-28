@@ -19,3 +19,4 @@ fi
 
 export RUBYLIB=$HOME/gems/lib
 export GEM_HOME=$HOME/gems
+cd $PWD
