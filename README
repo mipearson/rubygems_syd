@@ -1,0 +1,6 @@
+screw_you_debian.sh: install a homedir copy of RubyGems if not present
+and set up relevant environment variables. If already present, just
+set up the env variables. Run this either from your .profile or
+from the command line as:
+
+. ./screw_you_debian.sh
