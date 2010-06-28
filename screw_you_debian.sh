@@ -16,7 +16,7 @@ if [ ! -d gems ]; then
     ln -sf $HOME/gems/bin/gem1.8 $HOME/gems/bin/gem
 fi
 
-export PATH=$HOME/gems/bin:$HOME
+export PATH=$HOME/gems/bin:$PATH
 export RUBYLIB=$HOME/gems/lib
 export GEM_HOME=$HOME/gems
 cd $PWD
