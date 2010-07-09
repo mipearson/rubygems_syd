@@ -5,6 +5,9 @@
 ## they can run the application without having rubygems, bundler, etc. This
 ## is necessary as installing the correct version of bundler and rubygems on
 ## the systems that this application will be used on may not happen.
+##
+## Oh yeah - this is _scratch_ code. YMMV, there's some obvious improvements,
+## if you use this in a production application it's on your head.
 
 def bootstrap_rubygems
   gem_dir = ENV['HOME'] + '/gems'
