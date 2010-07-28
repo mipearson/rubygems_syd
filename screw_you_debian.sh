@@ -7,13 +7,14 @@
 #
 # . ./screw_you_debian.sh
 
-cd $HOME
 if [ ! -d gems ]; then
     PWD=`pwd`
+    cd $HOME
     curl http://production.cf.rubygems.org/rubygems/rubygems-1.3.7.tgz | tar -xzf -
     cd rubygems-1.3.7
     ruby setup.rb --prefix=$HOME/gems
     ln -sf $HOME/gems/bin/gem1.8 $HOME/gems/bin/gem
+    cd ..
     rm -rf rubygems-1.3.7
     cd $PWD
 fi
